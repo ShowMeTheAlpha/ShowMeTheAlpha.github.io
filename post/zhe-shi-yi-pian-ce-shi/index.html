@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>这是一篇测试 | Gridea</title>
+<title>mysql | Gridea</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://showmethealpha.github.io//favicon.ico?v=1595424412196">
+<link rel="shortcut icon" href="https://showmethealpha.github.io//favicon.ico?v=1595483615718">
 <link rel="stylesheet" href="https://showmethealpha.github.io//styles/main.css">
 
 
@@ -18,8 +18,16 @@
 
 
 
-    <meta name="description" content="这是一篇测试文章
-" />
+    <meta name="description" content="登陆与退出
+登陆：cmd：mysql -uroot -p -P3306 -h127.0.0.1
+输入密码：
+退出：exit
+cmd命令下清屏：cls
+修改提示符
+mysql提示符:
+1.\D 完整的日期
+2.\d 当前数据库
+3.\h 服务..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -29,7 +37,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://showmethealpha.github.io/">
-        <img src="https://showmethealpha.github.io//images/avatar.png?v=1595424412196" class="site-logo">
+        <img src="https://showmethealpha.github.io//images/avatar.png?v=1595483615718" class="site-logo">
         <h1 class="site-title">Gridea</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -91,11 +99,99 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">这是一篇测试</h2>
+            <h2 class="post-title">mysql</h2>
             <div class="post-date">2020-07-22</div>
             
             <div class="post-content" v-pre>
-              <p>这是一篇测试文章</p>
+              <h2 id="登陆与退出">登陆与退出</h2>
+<p>登陆：cmd：mysql -uroot -p -P3306 -h127.0.0.1</p>
+<p>输入密码：</p>
+<p>退出：exit</p>
+<p>cmd命令下清屏：cls</p>
+<h2 id="修改提示符">修改提示符</h2>
+<p>mysql提示符:</p>
+<p>1.\D 完整的日期</p>
+<p>2.\d 当前数据库</p>
+<p>3.\h 服务器名称</p>
+<p>4.\u 当前用户</p>
+<ul>
+<li>
+<p>连接客户端时通过参数指定</p>
+</li>
+<li>
+<p>shell&gt;mysql -uroot -proot --prompt [\h](本地主机)</p>
+</li>
+<li>
+<p>连接上客户端后，通过prompt</p>
+</li>
+</ul>
+<p>PROMT \u@\h \d&gt;</p>
+<h2 id="常用命令">常用命令</h2>
+<ul>
+<li>
+<p>显示当前服务器版本</p>
+</li>
+<li>
+<p>SELECT VERSION();</p>
+</li>
+<li>
+<p>显示当前日期和时间</p>
+</li>
+<li>
+<p>SELECT NOW();</p>
+</li>
+<li>
+<p>显示当前用户</p>
+</li>
+<li>
+<p>SELECT USER();</p>
+</li>
+</ul>
+<h2 id="语法规范">语法规范</h2>
+<ul>
+<li>
+<p>关键字与函数名称全部大写</p>
+</li>
+<li>
+<p>数据库名称、表名称、字段名称全部小写</p>
+</li>
+<li>
+<p>SQL语句必须以分号结尾</p>
+</li>
+</ul>
+<h2 id="操作数据库">操作数据库</h2>
+<ul>
+<li>
+<p>创建数据库</p>
+</li>
+<li>
+<p>CREATE {DATABASE | SCHEMA}[IF NOT EXISTS] db_name</p>
+<p>[DEFAULT] CHARACTER SET [=] charset_name</p>
+<p>(花括号为必选项，竖线表示或，中括号表示可选项)</p>
+<p>EXP : CREATE DATABASE t1；</p>
+</li>
+<li>
+<p>显示警告</p>
+</li>
+<li>
+<p>show warnings;</p>
+</li>
+</ul>
+<h3 id="验证是否创建成功">验证是否创建成功</h3>
+<ul>
+<li>SHOW DATABASES;</li>
+</ul>
+<h3 id="验证数据库编码方式">验证数据库编码方式</h3>
+<ul>
+<li>SHOW CREATE DATABASE db_name;</li>
+</ul>
+<h3 id="修改数据库">修改数据库</h3>
+<ul>
+<li>ALTER {DATABASE | SCHEMA} [db_name]<br>
+[DEFAULT] CHARACTER SET [=] charset_name</li>
+</ul>
+<h3 id="删除数据库">删除数据库</h3>
+<p>DROP {DATABASE | SCHEMA} [IF EXISTS] db_name</p>
 
             </div>
             

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://showmethealpha.github.io/</id>
     <title>Gridea</title>
-    <updated>2020-07-22T14:17:06.636Z</updated>
+    <updated>2020-07-23T05:53:38.682Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://showmethealpha.github.io/"/>
     <link rel="self" href="https://showmethealpha.github.io/atom.xml"/>
@@ -11,12 +11,100 @@
     <icon>https://showmethealpha.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
-        <title type="html"><![CDATA[这是一篇测试]]></title>
+        <title type="html"><![CDATA[mysql]]></title>
         <id>https://showmethealpha.github.io/post/zhe-shi-yi-pian-ce-shi/</id>
         <link href="https://showmethealpha.github.io/post/zhe-shi-yi-pian-ce-shi/">
         </link>
         <updated>2020-07-22T13:18:42.000Z</updated>
-        <content type="html"><![CDATA[<p>这是一篇测试文章</p>
+        <content type="html"><![CDATA[<h2 id="登陆与退出">登陆与退出</h2>
+<p>登陆：cmd：mysql -uroot -p -P3306 -h127.0.0.1</p>
+<p>输入密码：</p>
+<p>退出：exit</p>
+<p>cmd命令下清屏：cls</p>
+<h2 id="修改提示符">修改提示符</h2>
+<p>mysql提示符:</p>
+<p>1.\D 完整的日期</p>
+<p>2.\d 当前数据库</p>
+<p>3.\h 服务器名称</p>
+<p>4.\u 当前用户</p>
+<ul>
+<li>
+<p>连接客户端时通过参数指定</p>
+</li>
+<li>
+<p>shell&gt;mysql -uroot -proot --prompt [\h](本地主机)</p>
+</li>
+<li>
+<p>连接上客户端后，通过prompt</p>
+</li>
+</ul>
+<p>PROMT \u@\h \d&gt;</p>
+<h2 id="常用命令">常用命令</h2>
+<ul>
+<li>
+<p>显示当前服务器版本</p>
+</li>
+<li>
+<p>SELECT VERSION();</p>
+</li>
+<li>
+<p>显示当前日期和时间</p>
+</li>
+<li>
+<p>SELECT NOW();</p>
+</li>
+<li>
+<p>显示当前用户</p>
+</li>
+<li>
+<p>SELECT USER();</p>
+</li>
+</ul>
+<h2 id="语法规范">语法规范</h2>
+<ul>
+<li>
+<p>关键字与函数名称全部大写</p>
+</li>
+<li>
+<p>数据库名称、表名称、字段名称全部小写</p>
+</li>
+<li>
+<p>SQL语句必须以分号结尾</p>
+</li>
+</ul>
+<h2 id="操作数据库">操作数据库</h2>
+<ul>
+<li>
+<p>创建数据库</p>
+</li>
+<li>
+<p>CREATE {DATABASE | SCHEMA}[IF NOT EXISTS] db_name</p>
+<p>[DEFAULT] CHARACTER SET [=] charset_name</p>
+<p>(花括号为必选项，竖线表示或，中括号表示可选项)</p>
+<p>EXP : CREATE DATABASE t1；</p>
+</li>
+<li>
+<p>显示警告</p>
+</li>
+<li>
+<p>show warnings;</p>
+</li>
+</ul>
+<h3 id="验证是否创建成功">验证是否创建成功</h3>
+<ul>
+<li>SHOW DATABASES;</li>
+</ul>
+<h3 id="验证数据库编码方式">验证数据库编码方式</h3>
+<ul>
+<li>SHOW CREATE DATABASE db_name;</li>
+</ul>
+<h3 id="修改数据库">修改数据库</h3>
+<ul>
+<li>ALTER {DATABASE | SCHEMA} [db_name]<br>
+[DEFAULT] CHARACTER SET [=] charset_name</li>
+</ul>
+<h3 id="删除数据库">删除数据库</h3>
+<p>DROP {DATABASE | SCHEMA} [IF EXISTS] db_name</p>
 ]]></content>
     </entry>
     <entry>
